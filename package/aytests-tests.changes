@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Mar  3 16:20:43 UTC 2017 - igonzalezsosa@suse.com
+
+- Check the auto partitioning creates default subvolumes
+- 1.0.39.5
+
+-------------------------------------------------------------------
 Mon Feb 20 10:09:51 CET 2017 - schubi@suse.de
 
 - Testcase for enabling/disabling services in the first
