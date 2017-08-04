@@ -1,6 +1,28 @@
 <?xml version="1.0"?>
 <!DOCTYPE profile>
 <profile xmlns="http://www.suse.com/1.0/yast2ns" xmlns:config="http://www.suse.com/1.0/configns">
+  <add-on>
+    <add_on_products config:type="list">
+      <listentry>
+        <media_url><![CDATA[{{REPO1_URL}}]]></media_url>
+        <product>custom</product>
+        <product_dir>/</product_dir>
+        <name>Customized</name>
+        <signature-handling>
+          <accept_unsigned_file config:type="boolean">true</accept_unsigned_file>
+          <accept_file_without_checksum config:type="boolean">true</accept_file_without_checksum>
+          <accept_non_trusted_gpg_key>
+            <all config:type="boolean">true</all>
+          </accept_non_trusted_gpg_key>
+          <accept_unknown_gpg_key>
+            <all config:type="boolean">true</all>
+          </accept_unknown_gpg_key>
+          <accept_verification_failed config:type="boolean">true</accept_verification_failed>
+        </signature-handling>
+      </listentry>
+    </add_on_products>
+  </add-on>
+
   <general>
     <signature-handling>
       <accept_unsigned_file         config:type="boolean">true</accept_unsigned_file>
